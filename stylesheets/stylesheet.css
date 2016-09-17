@@ -44,6 +44,24 @@ h3{
   text-align: center;
   margin: 0px;
 }
+ 
+
+#adjinput{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 2px solid black;
+  display: inline-block;
+
+
+}
+
+p{
+  text-align: center;
+  width: 100%;
+}
+
+
 
 
 /*name at top left*/
