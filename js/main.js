@@ -27,3 +27,18 @@
         }, 1);
     }
 })();
+
+document.getElementById("adjinput")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.location.href = "shareScreen.html";
+    }
+});
+
+function numbersOnly(input){
+    var regex = /[^2-6]/g;
+    input.value = input.value.replace(regex, "");
+
+
+} 
