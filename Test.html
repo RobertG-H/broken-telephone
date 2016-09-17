@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+<style>
+body{
+                background-color: #000000;
+}
+h1{
+                text-align: center;
+}
+*{
+	font-family: sans-serif;
+}
+#iD{
+letter-spacing: 3px;
+}
+
+</style>
+
+
+<body>
+<font color="white">
+
+<form>
+Number of Players:<br>
+  <input id="Players" type="text" name="Number of Players"><br>
+  Sentence:<br>
+  <input id="inputSentence" type="text" name="Enter your sentence">
+</form>
+
+<h1>My First Heading</h1>
+
+<p id="txt">My first paragraph.</p>
+
+
+
+<button onclick="rnd()">Random Number</button>
+<p id="iD"></p>
+<form>
+  Player Guess:<br>
+  <input id="playerGuess" type="text" name="Enter your guess">
+</form>
+<button onclick="storeGuess()">Enter</button>
+
+
+<script>
+var pointer=0;
+var inputPhrase= document.getElementById("inputSentence").value;
+var numPlayers = document.getElementById("inputSentence").value
+var guesses =[numPlayers];
+function rnd() {
+var iS = document.getElementById("inputSentence").value;
+var letters = iS.split("");
+var nsLet = iS.replace(/\s+/g, '').split("");
+console.log(nsLet);
+var numLetRm = Math.round(nsLet.length*.6);
+document.getElementById("inputSentence").value = "";
+console.log(iS);
+console.log(numLetRm);
+for (i = 0; i < numLetRm; i++){
+	var chosenNum = Math.floor((Math.random() * letters.length) + 1);
+	var chosenLet =letters[chosenNum];
+	while(chosenLet==" "){
+	chosenNum = Math.floor((Math.random() * letters.length) + 1);
+        chosenLet=letters[chosenNum];
+	}
+	letters[chosenNum]="_";
+	
+}
+
+for (i = 0; i < letters.length; i++){
+$("#iD").append(letters[i]);
+}
+}
+
+function storeGuess(){
+guesses[pointer]=document.getElementById("playerGuess").value;
+if(pointer<numPlayers){
+pointer++;
+}
+}
+
+</script>
+</body>
+</font>
+</html>
