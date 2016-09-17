@@ -2,8 +2,7 @@ body {
   font-size: 22px;
   color: #000;
   background-color: #FFF;
-  font-family: 'Oswald', sans-serif;
-  /*max-width: 1200px;*/
+  font-family: 'Dosis', sans-serif;
 }
 
 
@@ -11,14 +10,6 @@ body {
 max-width: 960px;
 }
 
-.banner{
-  max-width: 1500px;
-}
-
-.banner-border{
-  width: 100%;
-  background-color: #000;
-}
 
 .center {
   left: 0px;
@@ -35,185 +26,33 @@ max-width: 960px;
   padding: 0;
       overflow: hidden;
   height: 65px;
-  z-index: 1;
+  z-index: -1;
   background-color: #000;
 }
+
+
+
+h2{
+  padding-top: 150px;
+  text-align: center;
+  font-size: 66px;
+}
+
+h3{
+  font-style: italic;
+  font-size: 30px;
+}
+
 
 /*name at top left*/
 #header-name{
-    float: left;
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-size: 1.05em;
+  text-align: center;
+    padding-top: 15px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    font-size: 1.5em;
     color: #fff;
+    font-weight: bold;
 }
 
-/*about me, experience, projects etc*/
-#navItem {
-    float: left;
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    color: #fff;
-}
-#navItem:nth-child(2){
-}
-/*
-#navItem:hover {
-  float: left;
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    padding-left: 25px;
-
-#navItem:active {
-  float: left;
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    padding-left: 25px;
-}*/
-
-#big-name{
-  margin-top: 195px;
-  font-size: 75px;
-  text-align: center;
-  color: #fff;
-  width: 100%;
-  background-color: rgba(0,0,0, 0.65);
-
-  }
-
-.intro-big{
-  height: 580px;
-
-  display:block;
-  width: 100%;
-  padding: 0;
-    padding-top: 65px;
-
-  margin: 0;
-    background-image: url("../images/Me(edit).png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-.line{
-  border: none;
-  width: 140px;
-  height: 1px;
-  color: #000;
-  background-color: #000;
-}
-h2{
-  font-size: 36px;
-}
-h3{
-  font-size: 28px;
-}
-h4{
-  font-size: 20;
-  font-style: italic;
-}
-
-.circle-pic{
-  height: 300px;
-  width: 300px;
-  padding: 0;
-  margin: auto;
-  display: block;
-  background-image: url("../images/circle photo (edit).png");
-  background-size: 300px 300px;
-  background-repeat: no-repeat;
-}
-
-p{
-  text-align: center;
-  font-size: 0.95em;
-}
-
-
-li{
-  text-align: left;
-  padding-top: 10px;
-}
-
-p > a{
-  font-size: 28px;
-}
-
-a:link{
-  color: black;
-}
-
-p > a:visited {
-    color: grey;
-}
-a:visited {
-    color: white;
-}
-
-
-/* mouse over link */
-a:hover {
-    color: #9ab;
-}
-
-/* selected link */
-a:active {
-    color: #9ab;
-}
-
-
-
-
-
-.second-big{
-  
-  height: 580px;
-
-  display:block;
-  width: 100%;
-  padding: 0;
-  padding-top: 65px;
-
-  margin: 0;
-    background-image: url("../images/Team(edit).png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-
-
-
-
-footer{
-  width: 100%;
-  padding: 0;
-  overflow: hidden;
-  height: 65px;
-  background-color: #000;
-}
-
-
-.resume{
-  color: #fff;
-  text-align: center;
-  font-size: 1.5em;
-  padding: 20px;
-  margin-right: 5px;
-  margin-bottom: 20px;
-}
-
-.textBox{
-  margin-bottom: 20px;
-}
-.row {
-  width: 100%;
-}
