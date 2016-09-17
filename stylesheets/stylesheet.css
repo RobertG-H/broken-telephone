@@ -26,7 +26,7 @@ max-width: 960px;
   padding: 0;
       overflow: hidden;
   height: 65px;
-  z-index: -1;
+  z-index: 1;
   background-color: #000;
 }
 
@@ -40,7 +40,9 @@ h2{
 
 h3{
   font-style: italic;
-  font-size: 30px;
+  font-size: 20px;
+  text-align: center;
+  margin: 0px;
 }
 
 
@@ -56,3 +58,23 @@ h3{
     font-weight: bold;
 }
 
+h1> a:link {
+  color: #fff;
+    text-decoration: none;
+}
+
+h1> a:visited {
+  color: #fff;
+    text-decoration: none;
+}
+
+h1> a:hover {
+  color: #fff;
+    text-decoration: underline;
+}
+
+h1>a:active {
+   color: #fff;
+     text-decoration: underline;
+  
+}
