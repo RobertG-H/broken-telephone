@@ -38,6 +38,7 @@ document.getElementById("adjinput")
 
 function numbersOnly(input){
     var regex = /[^2-6]/g;
+    input.value = input.value.replace(regex, "");
 
 
 } 
