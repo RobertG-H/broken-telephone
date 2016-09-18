@@ -28,13 +28,24 @@
     }
 })();
 
+
+
+
 document.getElementById("adjinput")
     .addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode == 13) {
+
+        document.location.href = "enterPhrase.html";
+    }
+    else if (event.keyCode == 13 && document.location.href == "enterPhrase.html"){
+        rnd();
         document.location.href = "shareScreen.html";
     }
+
 });
+
+
 
 function numbersOnly(input){
     var regex = /[^2-6]/g;
@@ -42,3 +53,55 @@ function numbersOnly(input){
 
 
 } 
+
+
+
+
+
+
+
+// Below is code from test 
+
+var pointer=0;
+var inputPhrase= document.getElementById("adjinput").value;
+var numPlayers = document.getElementById("players").value;
+var guesses =[numPlayers];
+
+
+function rnd() {
+
+    var iS = document.getElementById("adjinput").value;
+    var letters = iS.split("");
+    var nsLet = iS.replace(/\s+/g, '').split("");
+    console.log(nsLet);
+    var numLetRm = Math.round(nsLet.length*.6);
+    document.getElementById("adjinput").value = "";
+    console.log(iS);
+    console.log(numLetRm);
+    
+    for (i = 0; i < numLetRm; i++){
+        
+        var chosenNum = Math.floor((Math.random() * letters.length) + 1);
+        var chosenLet =letters[chosenNum];
+        
+        while(chosenLet==" "){
+            chosenNum = Math.floor((Math.random() * letters.length) + 1);
+            chosenLet=letters[chosenNum];
+        }
+
+    letters[chosenNum]="_";
+    
+    }
+
+    for (i = 0; i < letters.length; i++){
+        $("#iD").append(letters[i]);
+    }
+}
+
+function storeGuess(){
+    guesses[pointer]=document.getElementById("playerGuess").value;
+
+    if(pointer<numPlayers){
+        pointer++;
+    }
+}
