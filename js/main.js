@@ -1,3 +1,6 @@
+/*
+
+
 (function(){
     var min = 100, max = 900, pad_right = 5, input = document.getElementById('adjinput');
 
@@ -53,7 +56,7 @@ function numbersOnly(input){
 
 
 } 
-
+*/
 
 
 
@@ -63,11 +66,56 @@ function numbersOnly(input){
 // Below is code from test 
 
 var pointer=0;
+/*
 var inputPhrase= document.getElementById("adjinput").value;
-var numPlayers = document.getElementById("players").value;
+var numPlayers = document.getElementById("players").value;*/
+
+var inputPhrase= "A B C D";
+var numPlayers = 4;
+
 var guesses =[numPlayers];
 
 
+
+
+rnd();
+
+function rnd() {
+
+    var iS = inputPhrase;
+    var letters = iS.split("");
+    var nsLet = iS.replace(/\s+/g, '').split("");
+    console.log(nsLet);
+    var numLetRm = Math.round(nsLet.length*.6);
+    inputPhrase = "";
+    console.log(iS);
+    console.log(numLetRm);
+    
+    for (i = 0; i < numLetRm; i++){
+        
+        var chosenNum = Math.floor((Math.random() * letters.length) + 1);
+        var chosenLet =letters[chosenNum];
+        
+        while(chosenLet==" "){
+            chosenNum = Math.floor((Math.random() * letters.length) + 1);
+            chosenLet=letters[chosenNum];
+        }
+
+    letters[chosenNum]="_";
+    
+    }
+
+    for (i = 0; i < letters.length; i++){
+        $("#iD").append(letters[i]);
+    }
+    console.log("test  ");
+}
+
+
+
+
+
+/*
 function rnd() {
 
     var iS = document.getElementById("adjinput").value;
@@ -96,7 +144,7 @@ function rnd() {
     for (i = 0; i < letters.length; i++){
         $("#iD").append(letters[i]);
     }
-}
+}*/
 
 function storeGuess(){
     guesses[pointer]=document.getElementById("playerGuess").value;
