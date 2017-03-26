@@ -1,7 +1,11 @@
 
+/*(function(){
+
+
 
 
 (function(){
+
     var min = 100, max = 900, pad_right = 5, input = document.getElementById('adjinput');
 
     input.style.width = min+'px';
@@ -31,6 +35,8 @@
     }
 })();
 
+*/
+
 
 
 
@@ -47,6 +53,7 @@ document.getElementById("adjinput")
     }
 
 });
+
 
 
 
