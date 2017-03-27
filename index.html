@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <head> 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,31 +18,25 @@
 
 
 
-     <div class = "container center">
+     <div class = "container">
      	<h2>
-   		  Enter number of players test: 
+   		  Enter a phrase: 
      	</h2>
      	<h3>
-     		(Mininum: 2, Maximum: 10)
+     		(Minimum 10 characters)
      	</h3>
      </div>
 
-     <p class="center">
-      <input type="text" value=" " id="players" onkeyup="numbersOnly(this)" />
-      <a href="enterPhrase.html" class="btn btn-default">ENTER</a>
+     <p>
+      <input type="text" value=" " id="adjinput"/>
+      <div class = "container btn-box">
+        <a onclick="saveWords()" href="shareScreen.html" class="btn btn-default">ENTER</a>
+      </div>
+      
      </p>
 
-
-
-  <footer>
- 		
-        <div class = "footer">
-           <h1 id="footer-name" ><a href="index.html">View on Github</a></h1>   
-        </div>
-
-  </footer>
-
     
+
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>

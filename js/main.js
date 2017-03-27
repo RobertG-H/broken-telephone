@@ -1,12 +1,8 @@
-
-/*(function(){
-
-
-
+/* Expanding text field section*/
 
 (function(){
 
-    var min = 100, max = 900, pad_right = 5, input = document.getElementById('adjinput');
+    var min = 100, max = window.innerWidth*0.75, pad_right = 5, input = document.getElementById('adjinput');
 
     input.style.width = min+'px';
     input.onkeypress = input.onkeydown = input.onkeyup = function(){
@@ -35,38 +31,34 @@
     }
 })();
 
-*/
 
 
 
 
-document.getElementById("adjinput")
+
+/*document.getElementById("adjinput")
     .addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode == 13) {
 
-        document.location.href = "enterPhrase.html";
+        document.location.href = "index.html";
     }
-    else if (event.keyCode == 13 && document.location.href == "enterPhrase.html"){
+    else if (event.keyCode == 13 && document.location.href == "index.html"){
         rnd();
         document.location.href = "shareScreen.html";
     }
 
-});
+});*/
 
 
 
 
-function numbersOnly(input){
-    var regex = /[^2-6]/g;
-    input.value = input.value.replace(regex, "");
-
-
-} 
 
 
 
-
+function saveWords(){
+    loc
+}
 
 
 
@@ -115,7 +107,6 @@ function rnd() {
     for (i = 0; i < letters.length; i++){
         $("#iD").append(letters[i]);
     }
-    console.log("test  ");
 }
 
 
