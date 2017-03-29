@@ -33,7 +33,7 @@ body {
 
 
 h2{
-  padding-top: 150px;
+  padding-top: 40px;
   text-align: center;
   font-size: 66px;
 }
@@ -43,6 +43,10 @@ h3{
   font-size: 20px;
   text-align: center;
   margin: 0px;
+}
+
+.space{
+  padding-top: 150px;
 }
  
 

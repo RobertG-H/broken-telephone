@@ -34,31 +34,29 @@
 
 
 
-var inputPhrase = localStorage.getItem("phrase");
-var letters = inputPhrase.split("");
 
-var nsLet = inputPhrase.replace(/\s+/g, '').split("");
-console.log(nsLet);
-var numLetRm = Math.round(nsLet.length*.6);
-console.log(inputPhrase);
-console.log(numLetRm);
 
-for (i = 0; i < numLetRm; i++){
-    var chosenNum = Math.floor((Math.random() * letters.length) + 1);
-    var chosenLet =letters[chosenNum];
-    while(chosenLet==" "){
-    chosenNum = Math.floor((Math.random() * letters.length) + 1);
-        chosenLet=letters[chosenNum];
+/*document.getElementById("adjinput")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+
+        document.location.href = "index.html";
     }
-    letters[chosenNum]="_";
-    
-}
-for (i = 0; i < letters.length; i++)
-{
-    $("#iD").append(letters[i]);
-}
+    else if (event.keyCode == 13 && document.location.href == "index.html"){
+        rnd();
+        document.location.href = "shareScreen.html";
+    }
+
+});*/
+
+
+
+
+
+
 
 function saveWords(){
     var inputPhrase= document.getElementById("adjinput").value;
-    localStorage.setItem("guessPhrase", inputPhrase);
+    localStorage.setItem("phrase", inputPhrase);
 }

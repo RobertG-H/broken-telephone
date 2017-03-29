@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Broken Telephone</title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  </head>
+<body>
+     <div id = "header-nav">
+        <div class = "container">
+           <h1 id="header-name" ><a href="index.html">Broken Telephone</a></h1>   
+        </div>
+     </div>
+
+    <div class = "container">
+      <h2 class = "space">The actual phrase: </h2>
+      <p id="actualPhrase"></p> 
+      <h2>Your guess: </h2>
+      <p id="guessPhrase"></p> 
+      <h2 id="answer"></h2>
+      </div>
+       <p>
+        <div class = "container btn-box">
+          <a onclick="saveWords()" href="index.html" class="btn btn-default">PLAY AGAIN!</a>
+       </p>
+    </div>
+
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/results.js"></script>
+  <script src="js/html2canvas.js"></script>
+ </body>
+</html>
